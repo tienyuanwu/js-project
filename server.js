@@ -26,6 +26,8 @@ app.get('/', function (req, res) {
 	res.render('index');
 });
 
+app.use(express.static('client/view/'));
+
 // 設置views路徑和模板
 app.set('views', './client/view');
 app.set('view engine', 'html');
