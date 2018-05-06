@@ -34,12 +34,12 @@ function get3dChart(id, table) {
 				xaxis: {
 					tickvals: [0, 1, 2, 3, 4, 5, 6, 7],
 					ticktext: ['乾', '兌', '離', '震', '巽', '坎', '艮', '坤'],
-					tickfont: { size: 16 }
+					tickfont: { size: 14 }
 				},
 				yaxis: {
 					tickvals: [0, 1, 2, 3, 4, 5, 6, 7],
 					ticktext: ['乾', '兌', '離', '震', '巽', '坎', '艮', '坤'],
-					tickfont: { size: 16 }
+					tickfont: { size: 14 }
 				}
 			}
 		};
