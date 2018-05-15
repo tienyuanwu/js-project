@@ -176,23 +176,4 @@ function getFrequency3dChard(id, table) {
 	});
 }
 
-function postTable() {
-	var table = {
-		"name": "Test Table",
-		"data": [1,2,3,4,5,6]
-	}
 
-	$.ajax({
-		type: 'POST',
-		url: 'http://localhost:8080/v1/table',
-		data: JSON.stringify(table),
-		success: function(data) { 
-			console.log("success")
-		},
-		error: function(jqXHR, textStatus, error) {
-			console.log(error)
-		},
-		contentType: "application/json",
-		dataType: 'json'
-	});
-}
