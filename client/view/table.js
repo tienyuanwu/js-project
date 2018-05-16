@@ -1,6 +1,7 @@
 function onSubmit() {
 	var name = document.getElementById("table_name").value;
 	if (name == "") {
+		alert( "name is empty!");
 		return;
 	}
 
@@ -20,7 +21,6 @@ function postTable(name, b1, b2, b3, b4, b5, b6) {
 		"name": name,
 		"data": [b1,b2,b3,b4,b5,b6]
 	}
-
 	console.log(table)
 
 	$.ajax({
@@ -28,10 +28,10 @@ function postTable(name, b1, b2, b3, b4, b5, b6) {
 		url: 'http://localhost:8080/v1/table',
 		data: JSON.stringify(table),
 		success: function(data) { 
-			console.log("success")
+			alert( "success!");
 		},
 		error: function(jqXHR, textStatus, error) {
-			console.log(error)
+			alert(error);
 		},
 		contentType: "application/json",
 		dataType: 'json'
